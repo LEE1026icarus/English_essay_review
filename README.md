@@ -1,7 +1,3 @@
-좋습니다! 말씀하신 크레딧 문구를 **README 마지막 섹션**에 넣어서 정리해드릴게요.
-
----
-
 # ✍️ Essay Feedback App (Form/Chatbot Integrated)
 
 ## 📌 Overview
