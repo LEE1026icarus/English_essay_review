@@ -196,12 +196,12 @@ if "messages" not in st.session_state: st.session_state.messages = []  # 챗봇�
 if not st.session_state.auth:
     with st.form("login"):
         st.subheader("로그인")
-        name = st.text_input("이름")
+        name = st.text_input("학번")
         pw = st.text_input("공유 암호", type="password")
         submitted = st.form_submit_button("입장")
         if submitted:
             if not name.strip():
-                st.error("이름을 입력하세요.")
+                st.error("학번을 입력하세요.")
             elif not ok_pw(pw):
                 st.error("암호가 올바르지 않습니다.")
             else:
@@ -373,3 +373,4 @@ else:
         )
         if not ok:
             st.toast(f"로그 저장 실패: {err}", icon="⚠️")
+
