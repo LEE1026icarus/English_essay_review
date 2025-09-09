@@ -197,7 +197,7 @@ if not st.session_state.auth:
     with st.form("login"):
         st.subheader("로그인")
         name = st.text_input("학번")
-        pw = st.text_input("공유 암호", type="password")
+        pw = st.text_input("수업 코드", type="password")
         submitted = st.form_submit_button("입장")
         if submitted:
             if not name.strip():
@@ -373,4 +373,5 @@ else:
         )
         if not ok:
             st.toast(f"로그 저장 실패: {err}", icon="⚠️")
+
 
